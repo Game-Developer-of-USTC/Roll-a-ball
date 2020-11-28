@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
 		if (isOnGround())
 			isJumping = false;
+		if (isNearWall())
+			isJumping = false;
 		if (jumpPressed && isJumping == false)
 		{
 			rb.velocity = new Vector2(rb.velocity.x, jumpForce / rb.mass * Time.deltaTime);
@@ -79,7 +81,18 @@ public class Player : MonoBehaviour
 	bool isOnGround()
 	{
 		RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down, dis, ground);
-		Debug.DrawRay(transform.position, Vector2.down, Color.green);
+		Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
 		return ray;
+	}
+
+	bool isNearWall()
+	{
+		RaycastHit2D right = Physics2D.Raycast(transform.position, Vector2.right, dis, ground);
+		Debug.DrawRay(transform.position, Vector2.right, Color.green, 1);
+
+		RaycastHit2D left = Physics2D.Raycast(transform.position, Vector2.left, dis, ground);
+		Debug.DrawRay(transform.position, Vector2.left, Color.green, 1);
+
+		return right || left;
 	}
 }
