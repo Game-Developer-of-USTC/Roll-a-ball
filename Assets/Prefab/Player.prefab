@@ -147,3 +147,4 @@ MonoBehaviour:
   gravity: 010000000100000001000000
   Force: 150
   jumpForce: 4000
+  dis: 0.4

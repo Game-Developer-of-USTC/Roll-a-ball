@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 	public List<int> gravity;
 	public float Force;
 	public float jumpForce;
+	public float dis;
 
 	private bool jumpPressed;
 	private bool isJumping;
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour
 		float F = accleration * Force - sgn(rb.velocity.x) * rb.mass * rb.sharedMaterial.friction;
 		rb.velocity = new Vector2(rb.velocity.x + F / rb.mass * Time.deltaTime, rb.velocity.y);
 
-		if (rb.IsTouchingLayers(ground))
+		if (isOnGround())
 			isJumping = false;
 		if (jumpPressed && isJumping == false)
 		{
@@ -72,5 +73,12 @@ public class Player : MonoBehaviour
 	public void Death()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+
+	bool isOnGround()
+	{
+		RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down, dis, ground);
+		Debug.DrawRay(transform.position, Vector2.down, Color.green);
+		return ray;
 	}
 }
