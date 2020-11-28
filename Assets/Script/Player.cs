@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 			jumpPressed = false;
 			isJumping = true;
 		}
+		jumpPressed = false;
 	}
 	int sgn(float x)
 	{
