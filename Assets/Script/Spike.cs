@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
-	public BoxCollider2D coll;
+	public Player player;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -21,7 +21,7 @@ public class Spike : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-
+			player.Death();
 		}
 	}
 }
