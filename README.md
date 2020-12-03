@@ -53,6 +53,7 @@
 - [x] 完成镜头的跟随
   - 通过 cinemachine 插件来实现, 该插件提供了平滑移动/限制镜头移动区域等功能
 - [ ] 完成球体材质的切换
+- [ ] 完成退出游戏的功能
 - [x] 完成关卡间的切换
   - 通过 `SceneManager.LoadScene` 方法实现
   - 在 level01 中的 Door 有一个 EnterNext 的 Prefab, 通过该 Prefab 完成对下一场景的加载, 之后加载下一场景也建议使用该 Prefab
