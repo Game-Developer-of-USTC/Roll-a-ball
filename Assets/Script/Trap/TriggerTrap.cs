@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface CollidTrap
+public interface TriggerTrap
 {
 	void trapTrigger();
 	void trapInit();

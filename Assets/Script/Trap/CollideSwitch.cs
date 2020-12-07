@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollideSwitch : MonoBehaviour
 {
 	public GameObject trap;
+	public float dis = 0.2f;
 	private void Awake()
 	{
 		trap = transform.parent.Find("Trap").gameObject;
@@ -12,14 +13,15 @@ public class CollideSwitch : MonoBehaviour
 		{
 			Debug.Log("There must be a bug!");
 		}
-		trap.GetComponent<CollidTrap>().trapInit();
+		trap.GetComponent<TriggerTrap>().trapInit();
 	}
 	private void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y > 0)
-				trap.GetComponent<CollidTrap>().trapTrigger();
+			GameObject p = other.gameObject;
+			RaycastHit2D ray = Physics2D.Raycast(p.transform.position, Vector2.up, dis);
+			trap.GetComponent<TriggerTrap>().trapTrigger();
 		}
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrapController : MonoBehaviour, CollidTrap
+public class TrapController : MonoBehaviour, TriggerTrap
 {
 	public void trapTrigger()
 	{
