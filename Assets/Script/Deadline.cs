@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Deadline : MonoBehaviour
 {
-	public Player player;
 	public BoxCollider2D coll;
 	// Update is called once per frame
 
@@ -13,7 +12,7 @@ public class Deadline : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			player.Death();
+			other.GetComponent<Player>().Death();
 		}
 	}
 }

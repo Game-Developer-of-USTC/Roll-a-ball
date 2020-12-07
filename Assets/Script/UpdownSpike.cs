@@ -6,7 +6,6 @@ public class UpdownSpike : MonoBehaviour
 {
 	public Rigidbody2D rb;
 	public Transform up, down;
-	public Player player;
 	public float speed;
 	private float upy, downy;
 	private int dir = -1;
@@ -41,7 +40,7 @@ public class UpdownSpike : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			player.Death();
+			other.gameObject.GetComponent<Player>().Death();
 		}
 	}
 }

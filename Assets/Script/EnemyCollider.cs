@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spike : MonoBehaviour
+public class EnemyCollider : MonoBehaviour
 {
 	// Start is called before the first frame update
-	void Start()
+	public Collider2D coll;
+	private void Awake()
 	{
-
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-
+		coll = GetComponent<Collider2D>();
 	}
 
 	private void OnCollisionEnter2D(Collision2D other)
