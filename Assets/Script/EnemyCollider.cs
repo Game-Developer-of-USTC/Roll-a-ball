@@ -18,4 +18,12 @@ public class EnemyCollider : MonoBehaviour
 			other.gameObject.GetComponent<Player>().Death();
 		}
 	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Player")
+		{
+			other.gameObject.GetComponent<Player>().Death();
+		}
+	}
 }
