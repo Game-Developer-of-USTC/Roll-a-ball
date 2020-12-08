@@ -642,19 +642,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1453942936601160160, guid: 17f26273c3f422143a5302a74663a8f2, type: 3}
       propertyPath: m_Size.x
-      value: 1.5448837
+      value: 5.12833
       objectReference: {fileID: 0}
     - target: {fileID: 1453942936601160160, guid: 17f26273c3f422143a5302a74663a8f2, type: 3}
       propertyPath: m_Size.y
-      value: 2.4037333
+      value: 5.2487774
       objectReference: {fileID: 0}
     - target: {fileID: 1453942936601160160, guid: 17f26273c3f422143a5302a74663a8f2, type: 3}
       propertyPath: m_Offset.x
-      value: -10.022629
+      value: -10.039376
       objectReference: {fileID: 0}
     - target: {fileID: 1453942936601160160, guid: 17f26273c3f422143a5302a74663a8f2, type: 3}
       propertyPath: m_Offset.y
-      value: -4.314181
+      value: -6.7609253
       objectReference: {fileID: 0}
     - target: {fileID: 1453942936601160161, guid: 17f26273c3f422143a5302a74663a8f2, type: 3}
       propertyPath: m_Name
@@ -7182,15 +7182,15 @@ SpriteRenderer:
   m_SortingLayerID: -1448705601
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 179847ce42cb60d479d0f6c68f21bad1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31570e0e3725cf545aa6feb4d4b42336, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.98, y: 4.78}
+  m_Size: {x: 5.12, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1404885346
@@ -7201,8 +7201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404885344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.842497, y: 11.701414, z: 17.967882}
-  m_LocalScale: {x: 0.7125, y: 0.68743, z: 1}
+  m_LocalPosition: {x: 28.72, y: 11.38, z: 17.967882}
+  m_LocalScale: {x: 0.12608919, y: 0.100885026, z: 1}
   m_Children:
   - {fileID: 1046462410}
   m_Father: {fileID: 1419163281}
