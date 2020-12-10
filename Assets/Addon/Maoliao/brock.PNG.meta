@@ -1,7 +1,127 @@
 fileFormatVersion: 2
 guid: a1d91701bf9aaac4993c646ec8258e2f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4631186360205826100
+    second: brock_0
+  - first:
+      213: -3101404671797529589
+    second: brock_1
+  - first:
+      213: 8007555453880237032
+    second: brock_2
+  - first:
+      213: 4710869298023961487
+    second: brock_3
+  - first:
+      213: -7464383648389835608
+    second: brock_4
+  - first:
+      213: 8149413817667109100
+    second: brock_5
+  - first:
+      213: 1341916748673496344
+    second: brock_6
+  - first:
+      213: -8336184817092120066
+    second: brock_7
+  - first:
+      213: -5403813819296250377
+    second: brock_8
+  - first:
+      213: -872782867304872516
+    second: brock_9
+  - first:
+      213: 5945568037458345055
+    second: brock_10
+  - first:
+      213: -1949158064382413868
+    second: brock_11
+  - first:
+      213: 5117893302019765918
+    second: brock_12
+  - first:
+      213: 6169870149461470748
+    second: brock_13
+  - first:
+      213: -7669677591567604157
+    second: brock_14
+  - first:
+      213: 7639243889636082285
+    second: brock_15
+  - first:
+      213: -7373611908101766091
+    second: brock_16
+  - first:
+      213: -6419168008090566152
+    second: brock_17
+  - first:
+      213: -5531081484956061706
+    second: brock_18
+  - first:
+      213: -1645928143424610237
+    second: brock_19
+  - first:
+      213: -1683499770982435281
+    second: brock_20
+  - first:
+      213: -2123737626496993622
+    second: brock_21
+  - first:
+      213: -9099239267245210169
+    second: brock_22
+  - first:
+      213: 5868113151241319621
+    second: brock_23
+  - first:
+      213: 6132862735225771713
+    second: brock_24
+  - first:
+      213: 4572730894352650793
+    second: brock_25
+  - first:
+      213: 4662333851839852625
+    second: brock_26
+  - first:
+      213: -5168972326122259413
+    second: brock_27
+  - first:
+      213: -2440641700473799142
+    second: brock_28
+  - first:
+      213: 648168173697219780
+    second: brock_29
+  - first:
+      213: -2584929085188670928
+    second: brock_30
+  - first:
+      213: 2899189183150375644
+    second: brock_31
+  - first:
+      213: -2897621284289918948
+    second: brock_32
+  - first:
+      213: 4951417542840308139
+    second: brock_33
+  - first:
+      213: 8849293606947935254
+    second: brock_34
+  - first:
+      213: -2371609250912158993
+    second: brock_35
+  - first:
+      213: 3270041448767188436
+    second: brock_36
+  - first:
+      213: -936048785076227307
+    second: brock_37
+  - first:
+      213: -774730727200656188
+    second: brock_38
+  - first:
+      213: 4513989149094874149
+    second: brock_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +161,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,9 +193,873 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: brock_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438d3b02577454040800000000000000
+      internalID: 4631186360205826100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0475c802e895f4d0800000000000000
+      internalID: -3101404671797529589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebf5cb624d802f60800000000000000
+      internalID: 8007555453880237032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f831304daae506140800000000000000
+      internalID: 4710869298023961487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a45d7aae9e296890800000000000000
+      internalID: -7464383648389835608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce045b190b8881170800000000000000
+      internalID: 8149413817667109100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815b4d25c227f9210800000000000000
+      internalID: 1341916748673496344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1383b631cef4c80800000000000000
+      internalID: -8336184817092120066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5008446fbc105b0800000000000000
+      internalID: -5403813819296250377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb50f3c3b9043e3f0800000000000000
+      internalID: -872782867304872516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cfe9c01a6e28250800000000000000
+      internalID: 5945568037458345055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3f569411333f4e0800000000000000
+      internalID: -1949158064382413868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e963d39a7d8660740800000000000000
+      internalID: 5117893302019765918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1eefe82638cf9550800000000000000
+      internalID: 6169870149461470748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346e6dcbdd4df8590800000000000000
+      internalID: -7669677591567604157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_15
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62055ad7db040a60800000000000000
+      internalID: 7639243889636082285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_16
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5340102690baba990800000000000000
+      internalID: -7373611908101766091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_17
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 66
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c534f4b88ae6a0800000000000000
+      internalID: -6419168008090566152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff2471c1b6ad33b0800000000000000
+      internalID: -5531081484956061706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_19
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 69
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340ab55f21d7829e0800000000000000
+      internalID: -1645928143424610237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 42
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26f32bb0e103a8e0800000000000000
+      internalID: -1683499770982435281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f38871e7f682e0800000000000000
+      internalID: -2123737626496993622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c54095a81209b180800000000000000
+      internalID: -9099239267245210169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4798902d9bf6150800000000000000
+      internalID: 5868113151241319621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6dc551a2e4c1550800000000000000
+      internalID: 6132862735225771713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_25
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9221853658a957f30800000000000000
+      internalID: 4572730894352650793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_26
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1507137afefe3b040800000000000000
+      internalID: 4662333851839852625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c78a74e0f1448b0800000000000000
+      internalID: -5168972326122259413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_28
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 33
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ef043fd49112ed0800000000000000
+      internalID: -2440641700473799142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_29
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 36
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccbfe31581cef800800000000000000
+      internalID: 648168173697219780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03af0cb41bc702cd0800000000000000
+      internalID: -2584929085188670928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24556933dfb3820800000000000000
+      internalID: 2899189183150375644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_32
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c9405bc499c7d0800000000000000
+      internalID: -2897621284289918948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba152af7508f6b440800000000000000
+      internalID: 4951417542840308139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614544366a10fca70800000000000000
+      internalID: 8849293606947935254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feab95d93f9561fd0800000000000000
+      internalID: -2371609250912158993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_36
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd629a4f55816d20800000000000000
+      internalID: 3270041448767188436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_37
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5137811e69c7203f0800000000000000
+      internalID: -936048785076227307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_38
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4ff90228a9f35f0800000000000000
+      internalID: -774730727200656188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brock_39
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 3
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c84c70739e4ae30800000000000000
+      internalID: 4513989149094874149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
