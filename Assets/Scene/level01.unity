@@ -544,7 +544,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -651,18 +650,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea54b598acd90f4899fb9c69984d085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &640947460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -738,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016980697357996738, guid: 3f80629abedf30d4c94c9e35d359b1e3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6016980697357996738, guid: 3f80629abedf30d4c94c9e35d359b1e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -797,9 +784,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+      propertyPath: force
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+      propertyPath: jumpForce
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7198117690638014410, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7198117690638014410, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -864,6 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fd19076b1982649921a262c88db3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!4 &924937202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7175477964284690875, guid: 38a69583c53e3a14dbf4b8a72a422a06, type: 3}
@@ -8144,6 +8140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fd19076b1982649921a262c88db3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!4 &2138875050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7562556062248071816, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
@@ -8282,6 +8279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1419163281}
     m_Modifications:
+    - target: {fileID: 7175477963416579216, guid: 38a69583c53e3a14dbf4b8a72a422a06, type: 3}
+      propertyPath: waitTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7175477964284690874, guid: 38a69583c53e3a14dbf4b8a72a422a06, type: 3}
       propertyPath: m_Name
       value: Trigger

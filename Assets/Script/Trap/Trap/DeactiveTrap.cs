@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class DeactiveTrap : MonoBehaviour, TriggerTrap
 {
-	public void trapTrigger()
-	{
-		gameObject.SetActive(false);
-	}
+	public float waitTime;
 	public void trapInit()
 	{
 		// Do no thing
+	}
+	public void trapTrigger()
+	{
+		Invoke("internalTrigger", waitTime);
+
+	}
+
+	void internalTrigger()
+	{
+		gameObject.SetActive(false);
 	}
 }
