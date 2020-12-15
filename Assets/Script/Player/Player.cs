@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 	public Rigidbody2D rb;
-	public CircleCollider2D cc;
 	public LayerMask ground;
 	public List<PhysicsMaterial2D> material2Ds;
 	public List<int> masses;

@@ -8453,5 +8453,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collide
       objectReference: {fileID: 0}
+    - target: {fileID: 7562556062682771460, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7562556062682771460, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
