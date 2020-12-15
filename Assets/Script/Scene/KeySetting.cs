@@ -10,6 +10,11 @@ public class KeySetting : MonoBehaviour
 	void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Escape))
-			SceneManager.LoadScene(0);
+		{
+			if (SceneManager.GetActiveScene().buildIndex != 0)
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			else
+				Application.Quit();
+		}
 	}
 }
