@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5890912987330136519}
   - component: {fileID: 4933840223482201818}
   - component: {fileID: 8552466369008202390}
-  - component: {fileID: 9088577844846748968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -137,7 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2588899606055798847}
-  cc: {fileID: 5890912987330136519}
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -147,24 +145,15 @@ MonoBehaviour:
   - {fileID: 6200000, guid: b0a973f62e0e34643880ad40872bf10f, type: 2}
   masses: 140000000a00000005000000
   gravity: 010000000100000001000000
-  grab: []
-  force: 50
-  jumpForce: 50
+  grab:
+  - 0
+  - 0
+  - 0
+  force: 100
+  jumpForce: 100
   dis: 0.5
   acclerationCoef: 0
 --- !u!114 &8552466369008202390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4285972645905485060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea54b598acd90f4899fb9c69984d085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &9088577844846748968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
