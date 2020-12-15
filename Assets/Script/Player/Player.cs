@@ -6,23 +6,24 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 	public Rigidbody2D rb;
-	public CircleCollider2D cc;
 	public LayerMask ground;
 	public List<PhysicsMaterial2D> material2Ds;
 	public List<int> masses;
 	public List<int> gravity;
-	public float Force;
+	public List<float> grab;
+	public float force;
 	public float jumpForce;
 	public float dis;
-
 	private bool jumpPressed;
 	private bool isJumping;
+	public float acclerationCoef;
 
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		SwitchBall(1);
+		isJumping = true;
 	}
 
 	// Update is called once per frame
@@ -39,8 +40,9 @@ public class Player : MonoBehaviour
 	void FixedUpdate()
 	{
 		float accleration = Input.GetAxis("Horizontal");
-		float F = accleration * Force - sgn(rb.velocity.x) * rb.mass * rb.sharedMaterial.friction;
-		rb.velocity = new Vector2(rb.velocity.x + F / rb.mass * Time.deltaTime, rb.velocity.y);
+		// float F = accleration * Force - sgn(rb.velocity.x) * rb.mass * rb.sharedMaterial.friction;
+		// rb.velocity = new Vector2(rb.velocity.x + F / rb.mass * Time.deltaTime, rb.velocity.y);
+		rb.AddRelativeForce(new Vector2(accleration * force, 0), ForceMode2D.Force);
 
 		if (isOnGround())
 			isJumping = false;
@@ -48,7 +50,8 @@ public class Player : MonoBehaviour
 			isJumping = false;
 		if (jumpPressed && isJumping == false)
 		{
-			rb.velocity = new Vector2(rb.velocity.x, jumpForce / rb.mass * Time.deltaTime);
+			// rb.velocity = new Vector2(rb.velocity.x, jumpForce / rb.mass * Time.deltaTime);
+			rb.AddRelativeForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 			jumpPressed = false;
 			isJumping = true;
 		}
@@ -81,17 +84,17 @@ public class Player : MonoBehaviour
 	bool isOnGround()
 	{
 		RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down, dis, ground);
-		Debug.DrawRay(transform.position, Vector2.down, Color.green, 1);
+		Debug.DrawRay(transform.position, Vector2.down * dis, Color.green, 1);
 		return ray;
 	}
 
 	bool isNearWall()
 	{
 		RaycastHit2D right = Physics2D.Raycast(transform.position, Vector2.right, dis, ground);
-		Debug.DrawRay(transform.position, Vector2.right, Color.green, 1);
+		Debug.DrawRay(transform.position, Vector2.right * dis, Color.green, 1);
 
 		RaycastHit2D left = Physics2D.Raycast(transform.position, Vector2.left, dis, ground);
-		Debug.DrawRay(transform.position, Vector2.left, Color.green, 1);
+		Debug.DrawRay(transform.position, Vector2.left * dis, Color.green, 1);
 
 		return right || left;
 	}

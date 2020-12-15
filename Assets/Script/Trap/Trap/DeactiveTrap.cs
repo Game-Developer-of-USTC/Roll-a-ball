@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveTrap : MonoBehaviour, TriggerTrap
+public class DeactiveTrap : MonoBehaviour, TriggerTrap
 {
 	public float waitTime;
 	public void trapInit()
 	{
-		gameObject.SetActive(false);
+		// Do no thing
 	}
 	public void trapTrigger()
 	{
@@ -17,6 +17,6 @@ public class ActiveTrap : MonoBehaviour, TriggerTrap
 
 	void internalTrigger()
 	{
-		gameObject.SetActive(true);
+		gameObject.SetActive(false);
 	}
 }
