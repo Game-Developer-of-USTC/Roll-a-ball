@@ -583,10 +583,6 @@ PrefabInstance:
       propertyPath: force
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: jumpForce
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 7198117690638014410, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -623,8 +619,7 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8552466369008202390, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
 --- !u!114 &870498496 stripped
 MonoBehaviour:
@@ -8242,10 +8237,10 @@ PrefabInstance:
     - target: {fileID: 7562556062682771460, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8007555453880237032, guid: a1d91701bf9aaac4993c646ec8258e2f, type: 3}
     - target: {fileID: 7562556062682771460, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f3e395c9e10cdd49b57c78f42c515e9, type: 3}

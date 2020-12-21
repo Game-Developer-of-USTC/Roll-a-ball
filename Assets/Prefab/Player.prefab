@@ -143,18 +143,24 @@ MonoBehaviour:
   - {fileID: 6200000, guid: e3afc8a5abbc7df469b90cbf445a13bf, type: 2}
   - {fileID: 6200000, guid: 59d900b8573571e429d5f17d4cec0151, type: 2}
   - {fileID: 6200000, guid: b0a973f62e0e34643880ad40872bf10f, type: 2}
-  masses: 140000000100000005000000
-  gravity: 010000000100000001000000
+  masses:
+  - 5
+  - 1
+  - 0.5
+  gravity:
+  - 1
+  - 1
+  - 1
   grab:
   - 0
   - 0
   - 0
-  moveForce: 100
-  jumpForce: 100
-  jumpHeld: 50
+  moveForce: 8
+  jumpForce: 4
+  jumpHeld: 1
   jumpDuration: 0.1
   jumpTime: 0
-  dis: 0.5
+  dis: 0.7
   isJumpPressed: 0
   isJumping: 0
   isJumpHeld: 0

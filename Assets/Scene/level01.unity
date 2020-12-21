@@ -1405,30 +1405,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: dis
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: jumpHeld
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: jumpForce
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: moveForce
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: masses.Array.data[0]
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933840223482201818, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
-      propertyPath: masses.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7198117690638014410, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
       propertyPath: m_RootOrder
       value: 2
