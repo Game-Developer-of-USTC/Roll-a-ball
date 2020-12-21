@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7175477962514050722}
   m_Layer: 0
   m_Name: Switch
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 7175477963416579215}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c247c16923274f348bc7f59ce87f3714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!114 &7175477963416579215
 MonoBehaviour:
   m_ObjectHideFlags: 0
