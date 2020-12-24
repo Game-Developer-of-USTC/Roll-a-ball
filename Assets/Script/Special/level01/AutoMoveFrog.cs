@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Enemy1 : MonoBehaviour
+public class AutoMoveFrog : MonoBehaviour
 {
     public float velocity;
     public Rigidbody2D rb;

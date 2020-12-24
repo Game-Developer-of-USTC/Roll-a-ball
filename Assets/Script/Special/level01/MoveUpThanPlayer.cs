@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Trap1 : MonoBehaviour
+public class MoveUpThanPlayer : MonoBehaviour
 {
     public GameObject player;
     public LayerMask playerLayer;

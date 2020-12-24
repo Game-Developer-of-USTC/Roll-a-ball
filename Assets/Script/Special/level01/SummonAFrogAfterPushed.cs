@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap2 : MonoBehaviour
+public class SummonAFrogAfterPushed : MonoBehaviour
 {
     public GameObject player;
     public GameObject enemy;
