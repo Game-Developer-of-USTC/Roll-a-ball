@@ -12,7 +12,6 @@ public class AutoMoveFrog : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,17 +23,21 @@ public class AutoMoveFrog : MonoBehaviour
             transform.localScale = new Vector3(
                 -System.Math.Abs(transform.localScale.x),
                 transform.localScale.y,
-                transform.localScale.z);
+                transform.localScale.
+                z);
         else
             transform.localScale = new Vector3(
-     System.Math.Abs(transform.localScale.x),
-     transform.localScale.y,
-     transform.localScale.z);
+                System.Math.Abs(transform.localScale.x),
+                transform.localScale.y,
+                transform.localScale.z
+                );
 
         RaycastHit2D face = Physics2D.Raycast(
-            transform.position, velocity > 0 ? Vector2.right : Vector2.left,
+            transform.position,
+            velocity > 0 ? Vector2.right : Vector2.left,
             rayDis,
             groundLayer);
+        Debug.Log(face.collider);
         if (face) velocity = -velocity;
 
         Debug.DrawRay(
@@ -47,6 +50,11 @@ public class AutoMoveFrog : MonoBehaviour
             transform.position + new Vector3(+0.5f, 0.5f, 0),
             10 * Vector2.up,
             Color.green
+        );
+
+        Debug.DrawRay(
+            transform.position,
+            rayDis * (velocity > 0 ? Vector2.right : Vector2.left)
         );
     }
 
