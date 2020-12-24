@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
     {
         rb.mass = masses[ball];
         rb.gravityScale = gravity[ball];
-        switchMaterial(material2Ds[ball]);
+        // switchMaterial(material2Ds[ball]);
     }
 
     void switchMaterial(PhysicsMaterial2D m)
