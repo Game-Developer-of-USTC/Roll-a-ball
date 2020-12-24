@@ -1,21 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AddScore : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    private int bestScore;
+    private string levelName;
+    public TextMeshProUGUI scoreGUI;
+    public TextMeshProUGUI bestScoreGUI;
+    private void Awake()
+    {
+        levelName = SceneManager.GetActiveScene().name;
+        int bestScore = PlayerPrefs.GetInt(levelName + "BestScore");
+        bestScoreGUI.text = bestScore + "";
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Collection")
         {
             Destroy(other.gameObject);
-            int now = Int32.Parse(text.text);
+            int now = Int32.Parse(scoreGUI.text);
             now = now + 1;
-            text.text = now + "";
+            scoreGUI.text = now + "";
+            if (now > bestScore)
+            {
+                bestScore = now;
+                bestScoreGUI.text = bestScore + "";
+                PlayerPrefs.SetInt(levelName + "BestScore", bestScore);
+            }
         }
     }
 }
