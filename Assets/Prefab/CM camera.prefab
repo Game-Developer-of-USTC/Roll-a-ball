@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2820200335487877059}
   - component: {fileID: 2820200335487877058}
-  - component: {fileID: 4867165826152331709}
   m_Layer: 0
   m_Name: CM camera
   m_TagString: MainCamera
@@ -71,21 +70,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2820200335644773250}
---- !u!114 &4867165826152331709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2820200335487877061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BoundingShape2D: {fileID: 0}
-  m_Damping: 0.5
-  m_MaxWindowSize: 0
 --- !u!1 &2820200335644773253
 GameObject:
   m_ObjectHideFlags: 0
