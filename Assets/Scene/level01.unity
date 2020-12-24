@@ -53046,6 +53046,8 @@ MonoBehaviour:
   rightdownObject: {fileID: 1376731695}
   leftupObject: {fileID: 48386414}
   generateNum: 10
+  generateLim: 20
+  cherryCount: 0
   cherryPrefab: {fileID: 3160492511187852604, guid: 9a0388c29ebc9e14c97952cea2fda733, type: 3}
 --- !u!1001 &1276513028
 PrefabInstance:
@@ -57558,6 +57560,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7286655302408822751, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+      propertyPath: cg
+      value: 
+      objectReference: {fileID: 1275496906}
+    - target: {fileID: 7286655302408822751, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 225893951}
+    - target: {fileID: 7286655302408822751, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
+      propertyPath: bestScoreGUI
+      value: 
+      objectReference: {fileID: 1472682286}
     - target: {fileID: 7841711448361664368, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -57582,20 +57596,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4285972645905485060, guid: 3c2d31b51d39faf4d92c735690e2c2ce, type: 3}
   m_PrefabInstance: {fileID: 2054356790}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2054356793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054356792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9dbead5ad0354e4fac6367f87240eae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGUI: {fileID: 225893951}
-  bestScoreGUI: {fileID: 1472682286}
 --- !u!1 &2094000854
 GameObject:
   m_ObjectHideFlags: 0

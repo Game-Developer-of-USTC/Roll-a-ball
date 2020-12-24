@@ -9,6 +9,7 @@ public class AddScore : MonoBehaviour
     private string levelName;
     public TextMeshProUGUI scoreGUI;
     public TextMeshProUGUI bestScoreGUI;
+    public CherryGenerate cg;
     private void Awake()
     {
         levelName = SceneManager.GetActiveScene().name;
@@ -20,6 +21,7 @@ public class AddScore : MonoBehaviour
         if (other.gameObject.tag == "Collection")
         {
             Destroy(other.gameObject);
+            cg.cherryCount -= 1;
             int now = Int32.Parse(scoreGUI.text);
             now = now + 1;
             scoreGUI.text = now + "";

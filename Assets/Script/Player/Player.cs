@@ -93,15 +93,8 @@ public class Player : MonoBehaviour
     {
         rb.mass = masses[ball];
         rb.gravityScale = gravity[ball];
-        // switchMaterial(material2Ds[ball]);
         sr.sprite = sprites[ball];
     }
-
-    void switchMaterial(PhysicsMaterial2D m)
-    {
-        rb.sharedMaterial = m;
-    }
-
     public void Death()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -123,10 +116,5 @@ public class Player : MonoBehaviour
         Debug.DrawRay(transform.position, Vector2.left * dis, Color.green, 1);
 
         return right || left;
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-
     }
 }

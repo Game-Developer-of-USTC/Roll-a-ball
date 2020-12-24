@@ -11,6 +11,8 @@ public class CherryGenerate : MonoBehaviour
     private Vector3 leftup;
     private float regenerateTime;
     public int generateNum;
+    public int generateLim;
+    public int cherryCount;
     public GameObject cherryPrefab;
 
     private void Awake()
@@ -24,7 +26,8 @@ public class CherryGenerate : MonoBehaviour
         if (Time.time > regenerateTime)
         {
             Debug.Log("Generating!");
-            for (int i = 0; i < generateNum; ++i) generateCherry();
+            for (int i = 0; i < generateNum && cherryCount < generateLim; ++i)
+                generateCherry();
             regenerateTime += deltaTime;
         }
     }
@@ -35,5 +38,6 @@ public class CherryGenerate : MonoBehaviour
         float y = Random.Range(rightdown.y, leftup.y);
 
         GameObject cherry = GameObject.Instantiate(cherryPrefab, new Vector3(x, y, 0), Quaternion.identity);
+        ++cherryCount;
     }
 }
