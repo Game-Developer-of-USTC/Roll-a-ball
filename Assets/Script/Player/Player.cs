@@ -119,4 +119,12 @@ public class Player : MonoBehaviour
 
         return right || left;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            this.Death();
+        }
+    }
 }
