@@ -37,7 +37,6 @@ public class AutoMoveFrog : MonoBehaviour
             velocity > 0 ? Vector2.right : Vector2.left,
             rayDis,
             groundLayer);
-        Debug.Log(face.collider);
         if (face) velocity = -velocity;
 
         Debug.DrawRay(
