@@ -123,10 +123,6 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  material2Ds:
-  - {fileID: 6200000, guid: e3afc8a5abbc7df469b90cbf445a13bf, type: 2}
-  - {fileID: 6200000, guid: 59d900b8573571e429d5f17d4cec0151, type: 2}
-  - {fileID: 6200000, guid: b0a973f62e0e34643880ad40872bf10f, type: 2}
   masses:
   - 5
   - 1
@@ -139,6 +135,10 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  sprites:
+  - {fileID: 3879998909484952569, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
+  - {fileID: -144052500367966817, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
+  - {fileID: 2542091010444306472, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
   moveForce: 8
   jumpForce: 4
   jumpHeld: 1

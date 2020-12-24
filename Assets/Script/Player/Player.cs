@@ -7,12 +7,13 @@ public class Player : MonoBehaviour
 {
     [Header("辅助参数")]
     public Rigidbody2D rb;
+    public SpriteRenderer sr;
     public LayerMask ground;
     [Header("三个球的参数")]
-    public List<PhysicsMaterial2D> material2Ds;
     public List<float> masses;
     public List<float> gravity;
     public List<float> grab;
+    public List<Sprite> sprites;
     [Header("跳跃参数")]
     public float moveForce;
     public float jumpForce;
@@ -25,7 +26,10 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool isJumpHeld;
     private bool isGround;
-
+    private void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +94,7 @@ public class Player : MonoBehaviour
         rb.mass = masses[ball];
         rb.gravityScale = gravity[ball];
         // switchMaterial(material2Ds[ball]);
+        sr.sprite = sprites[ball];
     }
 
     void switchMaterial(PhysicsMaterial2D m)
