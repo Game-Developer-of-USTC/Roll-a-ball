@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class AutoMoveFrog : MonoBehaviour
+public class AutoMoveFrog : Enemy
 {
     public float velocity;
     public Rigidbody2D rb;
     public float rayDis = 0.7f;
-    private void Awake()
+    private new void Awake()
     {
+        base.Awake();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -59,8 +60,6 @@ public class AutoMoveFrog : MonoBehaviour
             rayDis);
         foreach (var item in face)
         {
-            Debug.Log("Frog Collided");
-            Debug.Log(item.collider.gameObject, this.gameObject);
             if ((item.collider.gameObject.tag == "Enemy" || item.collider.gameObject.tag == "Ground") && item.collider.gameObject != this.gameObject)
             {
                 velocity *= -1;
@@ -77,19 +76,10 @@ public class AutoMoveFrog : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            RaycastHit2D[] left = Physics2D.RaycastAll(
-            transform.position,
-            Vector2.up,
-            10);
-
-            Debug.Log(left);
-            foreach (var item in left)
+            if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y < 0)
             {
-                if (item.collider.tag == "Player")
-                {
-                    Destroy(gameObject);
-                    return;
-                }
+                Death();
+                return;
             }
 
             other.gameObject.GetComponent<Player>().Death();
