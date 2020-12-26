@@ -26,9 +26,14 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool isJumpHeld;
     private bool isGround;
+    [Header("动画参数")]
+    public Animator anim;
+    [Header("音乐参数")]
+    public AudioSource audioSource;
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
     // Start is called before the first frame update
     void Start()
@@ -95,9 +100,16 @@ public class Player : MonoBehaviour
         rb.gravityScale = gravity[ball];
         sr.sprite = sprites[ball];
     }
-    public void Death()
+    public void reload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Destroy(gameObject);
+    }
+    public void Death()
+    {
+        audioSource.Play();
+        anim.SetTrigger("death");
+        GetComponent<SpriteRenderer>().sprite = null;
     }
 
     bool isOnGround()

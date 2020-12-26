@@ -51085,6 +51085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f66f3680cec40c4cbf5c94950f9c9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   deathAudio: {fileID: 0}
   velocity: 1
   rb: {fileID: 213807641}
@@ -58226,6 +58227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f66f3680cec40c4cbf5c94950f9c9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   deathAudio: {fileID: 0}
   velocity: 1
   rb: {fileID: 1965642939}
