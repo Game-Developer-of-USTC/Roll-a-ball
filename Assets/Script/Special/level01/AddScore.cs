@@ -9,19 +9,22 @@ public class AddScore : MonoBehaviour
     private string levelName;
     public TextMeshProUGUI scoreGUI;
     public TextMeshProUGUI bestScoreGUI;
-    public CherryGenerate cg;
+    public string countName;
     private void Awake()
     {
         levelName = SceneManager.GetActiveScene().name;
-        int bestScore = PlayerPrefs.GetInt(levelName + "BestScore");
+        bestScore = PlayerPrefs.GetInt(levelName + "BestScore");
         bestScoreGUI.text = bestScore + "";
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Collection")
         {
+            int count = PlayerPrefs.GetInt(countName);
+            count--;
+            PlayerPrefs.SetInt(countName, count);
+
             Destroy(other.gameObject);
-            cg.cherryCount -= 1;
             int now = Int32.Parse(scoreGUI.text);
             now = now + 1;
             scoreGUI.text = now + "";
