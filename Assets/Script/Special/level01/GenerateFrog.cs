@@ -2,20 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CherryGenerate : MonoBehaviour
+public class GenerateFrog : MonoBehaviour
 {
     public float deltaTime;
-    public GameObject rightdownObject;
-    public GameObject leftupObject;
-    private Vector3 rightdown;
-    private Vector3 leftup;
+    public GameObject rightdownObject, leftupObject;
+    private Vector3 rightdown, leftup;
     private float regenerateTime;
     public int generateNum;
     public int generateLim;
-    private int cherryCount;
-    public GameObject cherryPrefab;
+    public GameObject prefab;
     public string countName;
-
     private void Awake()
     {
         PlayerPrefs.SetInt(countName, 0);
@@ -25,24 +21,22 @@ public class CherryGenerate : MonoBehaviour
 
     private void FixedUpdate()
     {
-        cherryCount = PlayerPrefs.GetInt(countName);
         if (Time.time > regenerateTime)
         {
-            Debug.Log("Generating!");
-            for (int i = 0; i < generateNum && cherryCount < generateLim; ++i)
-                generateCherry();
+            for (int i = 0; i < generateNum &&
+            PlayerPrefs.GetInt(countName) < generateLim; ++i)
+                generate();
             regenerateTime += deltaTime;
         }
     }
 
-    void generateCherry()
+    void generate()
     {
         float x = Random.Range(leftup.x, rightdown.x);
         float y = Random.Range(rightdown.y, leftup.y);
 
-        GameObject cherry = GameObject.Instantiate(cherryPrefab, new Vector3(x, y, 0), Quaternion.identity);
-        //TODO 添加碰撞检测
+        GameObject gm = GameObject.Instantiate(prefab, new Vector3(x, y, 0), Quaternion.identity);
+
         PlayerPrefs.SetInt(countName, PlayerPrefs.GetInt(countName) + 1);
-        ++cherryCount;
     }
 }
