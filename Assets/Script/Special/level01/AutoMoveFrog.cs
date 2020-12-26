@@ -8,7 +8,7 @@ public class AutoMoveFrog : Enemy
     public float velocity;
     public Rigidbody2D rb;
     public float rayDis = 0.7f;
-    private new void Awake()
+    protected override void Awake()
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
@@ -76,9 +76,11 @@ public class AutoMoveFrog : Enemy
     {
         if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y < 0)
+            if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y < -0.01f)
             {
-                Death();
+                Player player = other.gameObject.GetComponent<Player>();
+                player.rb.AddForce(new Vector2(0, player.jumpForce * 3), ForceMode2D.Impulse);
+                base.jumpOn();
                 return;
             }
 

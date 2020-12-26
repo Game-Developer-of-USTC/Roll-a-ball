@@ -51085,6 +51085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f66f3680cec40c4cbf5c94950f9c9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAudio: {fileID: 0}
   velocity: 1
   rb: {fileID: 213807641}
   rayDis: 0.7
@@ -58225,6 +58226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f66f3680cec40c4cbf5c94950f9c9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAudio: {fileID: 0}
   velocity: 1
   rb: {fileID: 1965642939}
   rayDis: 0.7
@@ -58971,7 +58973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3160492511187852578, guid: 9a0388c29ebc9e14c97952cea2fda733, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.6
+      value: 3.82
       objectReference: {fileID: 0}
     - target: {fileID: 3160492511187852578, guid: 9a0388c29ebc9e14c97952cea2fda733, type: 3}
       propertyPath: m_LocalPosition.y

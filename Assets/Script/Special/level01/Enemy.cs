@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Animator animator;
     public AudioSource deathAudio;
-    protected void Awake()
+    protected virtual void Awake()
     {
+        animator = GetComponent<Animator>();
         deathAudio = GetComponent<AudioSource>();
     }
     public void Death()
     {
-        deathAudio.Play();
+        Destroy(gameObject);
+        // deathAudio.Play();
         // Destroy(gameObject);
-        gameObject.transform.position = new Vector3(0, 0, 0);
+        // gameObject.transform.position = new Vector3(0, 0, 0);
+    }
+
+    public void jumpOn()
+    {
+        deathAudio.Play();
+        animator.SetTrigger("death");
     }
 }

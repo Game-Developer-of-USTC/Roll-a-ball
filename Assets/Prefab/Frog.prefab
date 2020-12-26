@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8023416389226986770}
   - component: {fileID: 990059539944952553}
   - component: {fileID: 3357505520493093534}
+  - component: {fileID: 9145468549384893677}
   m_Layer: 10
   m_Name: Frog
   m_TagString: Enemy
@@ -120,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f66f3680cec40c4cbf5c94950f9c9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAudio: {fileID: 0}
   velocity: 1
   rb: {fileID: 8023416389226986768}
   rayDis: 0.7
@@ -249,3 +251,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &9145468549384893677
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023416389226986764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75ad656957b60d1478414beafb976fdd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
