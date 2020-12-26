@@ -26,7 +26,7 @@ public class GenerateFrog : MonoBehaviour
             for (int i = 0; i < generateNum &&
             PlayerPrefs.GetInt(countName) < generateLim; ++i)
                 generate();
-            regenerateTime += deltaTime;
+            regenerateTime = Time.time + deltaTime;
         }
     }
 
