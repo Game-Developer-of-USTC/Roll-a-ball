@@ -77,31 +77,19 @@ public class AutoMoveFrog : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            RaycastHit2D left = Physics2D.Raycast(
-            transform.position + new Vector3(-0.5f, 0.5f, 0),
+            RaycastHit2D[] left = Physics2D.RaycastAll(
+            transform.position,
             Vector2.up,
             10);
 
-            if (left) Debug.Log(left.collider.tag);
-            else Debug.Log("Found nothing left");
-            if (left && left.collider.tag == "Player")
+            Debug.Log(left);
+            foreach (var item in left)
             {
-                Destroy(gameObject);
-                return;
-            }
-
-            RaycastHit2D right = Physics2D.Raycast(
-            transform.position + new Vector3(0.5f, 0.5f, 0),
-            Vector2.up,
-            10);
-
-            if (right)
-                Debug.Log(right.collider.tag);
-            else Debug.Log("Found nothing right");
-            if (right && right.collider.tag == "Player")
-            {
-                Destroy(gameObject);
-                return;
+                if (item.collider.tag == "Player")
+                {
+                    Destroy(gameObject);
+                    return;
+                }
             }
 
             other.gameObject.GetComponent<Player>().Death();
