@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3160492511187852605}
   - component: {fileID: 3160492511187852579}
   - component: {fileID: 3160492511187852576}
+  - component: {fileID: 8807609049625192352}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Collection
@@ -119,3 +120,17 @@ CircleCollider2D:
   m_Offset: {x: -0.070203006, y: 0.037801445}
   serializedVersion: 2
   m_Radius: 0.41699553
+--- !u!114 &8807609049625192352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160492511187852604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40912c5428d36854c80c5d27653219cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countName: CherryCount
+  lifeTime: 30

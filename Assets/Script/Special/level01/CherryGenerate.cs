@@ -12,7 +12,6 @@ public class CherryGenerate : MonoBehaviour
     private float regenerateTime;
     public int generateNum;
     public int generateLim;
-    private int cherryCount;
     public GameObject cherryPrefab;
     public string countName;
 
@@ -25,11 +24,10 @@ public class CherryGenerate : MonoBehaviour
 
     private void FixedUpdate()
     {
-        cherryCount = PlayerPrefs.GetInt(countName);
         if (Time.time > regenerateTime)
         {
             Debug.Log("Generating!");
-            for (int i = 0; i < generateNum && cherryCount < generateLim; ++i)
+            for (int i = 0; i < generateNum && PlayerPrefs.GetInt(countName) < generateLim; ++i)
                 generateCherry();
             regenerateTime += deltaTime;
         }
@@ -42,7 +40,5 @@ public class CherryGenerate : MonoBehaviour
 
         GameObject cherry = GameObject.Instantiate(cherryPrefab, new Vector3(x, y, 0), Quaternion.identity);
         //TODO 添加碰撞检测
-        PlayerPrefs.SetInt(countName, PlayerPrefs.GetInt(countName) + 1);
-        ++cherryCount;
     }
 }

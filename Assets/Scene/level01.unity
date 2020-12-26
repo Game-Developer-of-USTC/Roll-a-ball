@@ -52378,8 +52378,8 @@ MonoBehaviour:
   deltaTime: 5
   rightdownObject: {fileID: 1376731695}
   leftupObject: {fileID: 48386414}
-  generateNum: 3
-  generateLim: 10
+  generateNum: 6
+  generateLim: 100
   prefab: {fileID: 8023416389226986764, guid: 0fe6fb12953a6574a8994d01814a27f4, type: 3}
   countName: FrogCount
 --- !u!1 &946380794
@@ -53093,7 +53093,7 @@ MonoBehaviour:
   rightdownObject: {fileID: 1376731695}
   leftupObject: {fileID: 48386414}
   generateNum: 10
-  generateLim: 30
+  generateLim: 100
   cherryPrefab: {fileID: 3160492511187852604, guid: 9a0388c29ebc9e14c97952cea2fda733, type: 3}
   countName: CherryCount
 --- !u!1001 &1276513028

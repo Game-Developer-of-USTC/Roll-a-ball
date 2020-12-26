@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 8023416389226986768}
   - component: {fileID: 8023416389226986771}
   - component: {fileID: 8023416389226986770}
+  - component: {fileID: 990059539944952553}
   m_Layer: 10
-  m_Name: MovingEnemy
+  m_Name: Frog
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,9 +122,6 @@ MonoBehaviour:
   velocity: 1
   rb: {fileID: 8023416389226986768}
   rayDis: 0.7
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!58 &8023416389226986770
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -140,3 +138,17 @@ CircleCollider2D:
   m_Offset: {x: -0.044, y: -0.02607441}
   serializedVersion: 2
   m_Radius: 0.3203535
+--- !u!114 &990059539944952553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023416389226986764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40912c5428d36854c80c5d27653219cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countName: FrogCount
+  lifeTime: 30
