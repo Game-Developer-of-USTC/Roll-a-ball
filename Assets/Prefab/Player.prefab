@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163028173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163028174}
+  m_Layer: 9
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163028174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163028173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.413, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7198117690638014410}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4285972645905485060
 GameObject:
   m_ObjectHideFlags: 0
@@ -35,7 +65,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 163028174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -144,15 +175,18 @@ MonoBehaviour:
   - {fileID: 3879998909484952569, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
   - {fileID: -144052500367966817, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
   - {fileID: 2542091010444306472, guid: ceb4c0ccd07d31743a74fea669a2655b, type: 3}
-  moveForce: 8
-  jumpForce: 4
+  moveForce: 9
+  jumpForce: 7
   jumpHeld: 1
   jumpDuration: 0.1
   jumpTime: 0
+  jumpCount: 2
+  groundCheck: {fileID: 163028174}
   dis: 0.7
   isJumpPressed: 0
   isJumping: 0
   isJumpHeld: 0
+  isGround: 0
   anim: {fileID: 0}
   audioSource: {fileID: 3041466299312971766}
 --- !u!114 &8552466369008202390

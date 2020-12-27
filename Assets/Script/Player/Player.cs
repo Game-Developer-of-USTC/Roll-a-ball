@@ -20,18 +20,22 @@ public class Player : MonoBehaviour
     public float jumpHeld;
     public float jumpDuration;
     public float jumpTime;
+    public int jumpCount;
+    private int initCount;
+    public Transform groundCheck;
     [Header("状态参数")]
     public float dis;
     public bool isJumpPressed;
     public bool isJumping;
     public bool isJumpHeld;
-    private bool isGround;
+    public bool isGround;
     [Header("动画参数")]
     public Animator anim;
     [Header("音乐参数")]
     public AudioSource audioSource;
     private void Awake()
     {
+        initCount = jumpCount;
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
@@ -48,14 +52,15 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.W)) SwitchBall(1);
         else if (Input.GetKeyDown(KeyCode.E)) SwitchBall(2);
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && jumpCount > 0)
             isJumpPressed = true;
-        isJumpHeld = Input.GetButton("Jump");
-        isGround = isOnGround();
+        // isJumpHeld = Input.GetButton("Jump");
+        // isGround = isOnGround();
     }
 
     void FixedUpdate()
     {
+        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.1f, ground);
         horizontalMove();
         jumpMove();
     }
@@ -65,26 +70,54 @@ public class Player : MonoBehaviour
         float accleration = Input.GetAxis("Horizontal");
         // float F = accleration * Force - sgn(rb.velocity.x) * rb.mass * rb.sharedMaterial.friction;
         // rb.velocity = new Vector2(rb.velocity.x + F / rb.mass * Time.deltaTime, rb.velocity.y);
-        rb.AddRelativeForce(new Vector2(accleration * moveForce, 0), ForceMode2D.Force);
+        // rb.AddRelativeForce(new Vector2(accleration * moveForce, 0), ForceMode2D.Force);
+        rb.velocity = new Vector2(accleration * moveForce, rb.velocity.y);
     }
 
     void jumpMove()
     {
-        if (isJumpPressed && isJumping == false && isGround)
+        #region 按得越久跳的越高的方法
+        // if (isJumpPressed && isJumping == false && isGround)
+        // {
+        //     // rb.velocity = new Vector2(rb.velocity.x, jumpForce / rb.mass * Time.deltaTime);
+        //     rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        //     // rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        //     jumpTime = Time.time + jumpDuration;
+        //     isJumping = true;
+        //     isJumpPressed = false;
+        // }
+        // else if (isJumping)
+        // {
+        //     if (isJumpHeld)
+        //     {
+        //         // rb.velocity = new Vector2(rb.velocity.x, jumpHeld);
+        //         rb.AddForce(new Vector2(0f, jumpHeld), ForceMode2D.Impulse);
+        //     }
+        //     if (jumpTime < Time.time)
+        //         isJumping = false;
+        // }
+        #endregion
+
+        #region 多段跳跃的方法
+        if (isGround)
         {
-            // rb.velocity = new Vector2(rb.velocity.x, jumpForce / rb.mass * Time.deltaTime);
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            jumpTime = Time.time + jumpDuration;
+            jumpCount = initCount;
+            isJumping = false;
+        }
+        if (isJumpPressed && isGround)
+        {
             isJumping = true;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCount--;
             isJumpPressed = false;
         }
-        else if (isJumping)
+        else if (isJumpPressed && jumpCount > 0 && isJumping)
         {
-            if (isJumpHeld)
-                rb.AddForce(new Vector2(0f, jumpHeld), ForceMode2D.Impulse);
-            if (jumpTime < Time.time)
-                isJumping = false;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCount--;
+            isJumpPressed = false;
         }
+        #endregion
     }
 
     int sgn(float x)
@@ -108,6 +141,7 @@ public class Player : MonoBehaviour
     public void Death()
     {
         audioSource.Play();
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
         anim.SetTrigger("death");
         GetComponent<SpriteRenderer>().sprite = null;
     }
