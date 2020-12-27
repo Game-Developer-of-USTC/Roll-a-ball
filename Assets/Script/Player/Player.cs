@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     public Animator anim;
     [Header("音乐参数")]
     public AudioSource audioSource;
+
     private void Awake()
     {
         initCount = jumpCount;

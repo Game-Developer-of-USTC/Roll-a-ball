@@ -76,15 +76,15 @@ public class AutoMoveFrog : Enemy
     {
         if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y < -0.01f)
+            if (other.gameObject.GetComponent<Rigidbody2D>().velocity.y < 0.1f)
             {
                 Player player = other.gameObject.GetComponent<Player>();
-                player.rb.AddForce(new Vector2(0, player.jumpForce * 3), ForceMode2D.Impulse);
+                player.rb.velocity = new Vector2(player.rb.velocity.x, player.jumpForce);
                 base.jumpOn();
                 return;
             }
-
             other.gameObject.GetComponent<Player>().Death();
         }
     }
 }
+

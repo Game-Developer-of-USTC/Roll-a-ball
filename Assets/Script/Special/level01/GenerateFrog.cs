@@ -33,7 +33,7 @@ public class GenerateFrog : MonoBehaviour
     void generate()
     {
         float x = Random.Range(leftup.x, rightdown.x);
-        float y = Random.Range(rightdown.y, leftup.y);
+        float y = Random.Range(rightdown.y + (leftup.y - rightdown.y) * 0.75f, leftup.y);
 
         GameObject gm = GameObject.Instantiate(prefab, new Vector3(x, y, 0), Quaternion.identity);
 
