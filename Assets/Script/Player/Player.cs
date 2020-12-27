@@ -142,6 +142,9 @@ public class Player : MonoBehaviour
     public void Death()
     {
         audioSource.Play();
+        // rb = null;
+        Collider2D coll = GetComponent<Collider2D>();
+        coll = null;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         anim.SetTrigger("death");
         GetComponent<SpriteRenderer>().sprite = null;
