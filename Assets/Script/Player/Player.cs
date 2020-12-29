@@ -37,21 +37,21 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         initCount = jumpCount;
-        sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
     // Start is called before the first frame update
     void Start()
     {
         SwitchBall(1);
+        sr.sprite = null;
     }
 
     // 更新状态
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q)) SwitchBall(0);
-        else if (Input.GetKeyDown(KeyCode.W)) SwitchBall(1);
-        else if (Input.GetKeyDown(KeyCode.E)) SwitchBall(2);
+        if (Input.GetKeyDown(KeyCode.W)) SwitchBall(1);
+        if (Input.GetKeyDown(KeyCode.E)) SwitchBall(2);
 
         if (Input.GetButtonDown("Jump") && jumpCount > 0)
             isJumpPressed = true;
@@ -130,6 +130,7 @@ public class Player : MonoBehaviour
 
     void SwitchBall(int ball)
     {
+        Debug.Log("Switing ball" + " " + ball);
         rb.mass = masses[ball];
         rb.gravityScale = gravity[ball];
         sr.sprite = sprites[ball];
