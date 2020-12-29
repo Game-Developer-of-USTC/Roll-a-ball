@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2588899606055798847}
-  sr: {fileID: 0}
+  sr: {fileID: 7841711448361664368}
   ground:
     serializedVersion: 2
     m_Bits: 256
