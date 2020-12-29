@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -950,9 +950,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1267147167}
-        m_TargetAssemblyTypeName: ShowHelpMenu, Assembly-CSharp
-        m_MethodName: show
+      - m_Target: {fileID: 1385953184}
+        m_TargetAssemblyTypeName: HelpButton, Assembly-CSharp
+        m_MethodName: help
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1012,8 +1012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e857e233089c9248a8f32a084248d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 0}
-  selectMenu: {fileID: 0}
+  mainMenu: {fileID: 868507222}
+  helpPanel: {fileID: 17977859}
 --- !u!1 &1619038218
 GameObject:
   m_ObjectHideFlags: 0
