@@ -10,6 +10,8 @@ public class AutoMoveFrog : Enemy
     public float rayDis = 0.7f;
     protected override void Awake()
     {
+        if (UnityEngine.Random.Range(-1, 1) > 0)
+            velocity *= -1;
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
     }

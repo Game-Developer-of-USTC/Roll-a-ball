@@ -34,7 +34,12 @@ public class MoveUpThanPlayer : MonoBehaviour
             Vector2.down,
             yOffset + 1,
             playerLayer);
+        RaycastHit2D mid = Physics2D.Raycast(
+            new Vector2(transform.position.x, transform.position.y),
+            Vector2.down,
+            yOffset + 1,
+            playerLayer);
 
-        return right || left;
+        return right || left||mid;
     }
 }
